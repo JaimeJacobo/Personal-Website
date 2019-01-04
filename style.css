@@ -13,21 +13,12 @@ h1 {
   height: 100vh;
 }
 
-.introductionText {
-  color: rgb(255,255,255);
-  margin: 0px;
-  font-size: 6vw;
-}
-
-.aboutMeText {
+.webTitles {
   color: rgb(255,255,255);
   font-size: 6vw;
 }
 
-.myProjectsText {
-  color: rgb(255,255,255);
-  font-size: 6vw;
-}
+
 
 .flexCentered {
   display: flex;
