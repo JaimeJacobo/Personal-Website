@@ -10,6 +10,7 @@
 body {
   font-family: 'Karla', sans-serif;
   margin: 0px;
+  background-color: #000;
 }
 
 h1 {
@@ -20,6 +21,10 @@ h1 {
   background-color: rgb(0,0,0);
   width: 100vw;
   height: 100vh;
+}
+
+.maingPageBackgroundImage {
+  background-image: url('computerBackground.jpeg');
 }
 
 .webTitles {

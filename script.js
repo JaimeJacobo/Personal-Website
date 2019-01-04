@@ -1,8 +1,12 @@
 
 
 
+  $('#top').hide();
+
 document.onload = setTimeout(() =>{
   $('.introductionText').addClass('fadeOut');
+  $('#top').show();
+  // $('#homeScreen').addClass('maingPageBackgroundImage')
 },3000)
 
 
@@ -38,18 +42,20 @@ $(window).scroll(function() {
 
   
 //This makes the rest of the Navbar dissapear when you hover over 'Contact'
-$('#navbarContact').hover(function(){
-  $('#navbarSocialMedia').addClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeOut');
-  }, function(){
-  $('#navbarSocialMedia').removeClass('fadeOut');
-  $('#navbarSocialMedia').addClass('fadeIn');
-  $('#navbarMyProjects').removeClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeIn');
-  $('#navbarAboutMe').removeClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeIn');
-});
+
+  $('#navbarContact').hover(function(){
+    $('#navbarSocialMedia').addClass('fadeOut');
+    $('#navbarMyProjects').addClass('fadeOut');
+    $('#navbarAboutMe').addClass('fadeOut');
+    }, function(){
+    $('#navbarSocialMedia').removeClass('fadeOut');
+    $('#navbarSocialMedia').addClass('fadeIn');
+    $('#navbarMyProjects').removeClass('fadeOut');
+    $('#navbarMyProjects').addClass('fadeIn');
+    $('#navbarAboutMe').removeClass('fadeOut');
+    $('#navbarAboutMe').addClass('fadeIn');
+  });
+
 
 
 //This makes the rest of the Navbar dissapear when you hover over 'Social Media'
