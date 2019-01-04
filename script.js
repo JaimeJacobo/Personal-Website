@@ -3,10 +3,12 @@
 
   $('#top').hide();
 
+  document.onload = setTimeout(() =>{
+    $('#top').show();
+  },500)
+
 document.onload = setTimeout(() =>{
   $('.introductionText').addClass('fadeOut');
-  $('#top').show();
-  // $('#homeScreen').addClass('maingPageBackgroundImage')
 },3000)
 
 
