@@ -81,6 +81,7 @@ h1 {
 
 #aboutMeDetails {
   text-align: initial;
+  /* width: 50vw; */
 }
 
 #aboutMeDetails h2{
@@ -90,4 +91,20 @@ h1 {
 #aboutMeDetails p{
   font-size: 20px;
   text-align: initial;
+}
+
+#aboutMeImage {
+  height: 10vw;
+  width: 85vw;
+  background-image: url('computerImage2.jpg');
+  background-size: 85vw;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position-y: -40px;
+}
+
+#containerOfAboutMe {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 30px;
 }
