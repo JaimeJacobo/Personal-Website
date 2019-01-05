@@ -11,6 +11,7 @@ body {
   font-family: 'Karla', sans-serif;
   margin: 0px;
   background-color: #000;
+  color: white;
 }
 
 h1 {
@@ -25,6 +26,8 @@ h1 {
 
 .maingPageBackgroundImage {
   background-image: url('computerBackground.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .webTitles {
@@ -39,6 +42,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.biggerFont {
+  font-size: 10vw;
 }
 
 
@@ -71,3 +78,16 @@ h1 {
 }
 
 /* NAVBAR TERMINA */
+
+#aboutMeDetails {
+  text-align: initial;
+}
+
+#aboutMeDetails h2{
+  text-decoration: underline;
+}
+
+#aboutMeDetails p{
+  font-size: 20px;
+  text-align: initial;
+}

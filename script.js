@@ -11,15 +11,23 @@ document.onload = setTimeout(() =>{
   $('.introductionText').addClass('fadeOut');
 },3000)
 
+document.onload = setTimeout(() =>{
+  $('.introductionText').removeClass('fadeOut');
+  $('.introductionText').html('Jaime Jacobo');
+  $('.introductionText').addClass('biggerFont');
+  $('.introductionText').addClass('fadeIn');
+},4000)
+
 
 // NAVBAR PRUEBAS
 
 $(window).scroll(function() {
   // 100 = The point you would like to fade the nav in.
     
-  if ($(window).scrollTop() > 100 ){
+  if ($(window).scrollTop() == 100 ){
       
-      $('.bg').addClass('showNav');
+      // $('.bg').addClass('showNav');
+      console.log('bubucela')
       
   } else {
       
@@ -40,7 +48,6 @@ $(window).scroll(function() {
 
 
   // EFECTO HOVER PRUEBAS
-
 
   
 //This makes the rest of the Navbar dissapear when you hover over 'Contact'
