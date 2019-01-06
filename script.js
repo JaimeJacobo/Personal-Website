@@ -134,4 +134,28 @@ $('#letsGoFloridaImage').hover(function(){
   }, function(){
   $('#letsGoFloridaImage').attr('src', 'letsgofloBW.png');
 });
+
+
+// This makes the javascript image to change from black and white to the colored version
+$('#javascriptLogo').hover(function(){
+  $('#javascriptLogo').attr('src', 'javascriptLogo.jpg');
+  $('#javascriptLogoText').removeClass('blackFont');
+  $('#javascriptLogoText').addClass('whiteFont');
+  }, function(){
+  $('#javascriptLogo').attr('src', 'javascriptLogoBW.jpg');
+  $('#javascriptLogoText').removeClass('whiteFont');
+  $('#javascriptLogoText').addClass('blackFont');
+});
+
+
+// This makes the css image to change from black and white to the colored version
+$('#cssLogo').hover(function(){
+  $('#cssLogo').attr('src', 'cssLogo.png');
+  $('#cssLogoText').removeClass('blackFont');
+  $('#cssLogoText').addClass('whiteFont');
+  }, function(){
+  $('#cssLogo').attr('src', 'cssLogoBW.png');
+  $('#cssLogoText').removeClass('whiteFont');
+  $('#cssLogoText').addClass('blackFont');
+});
   

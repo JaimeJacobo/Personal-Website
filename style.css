@@ -109,7 +109,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-#projectPictures {
+.flexWrap {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -132,7 +132,7 @@ h1 {
 .flexCenteredColumn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex;
   align-items: center;
 }
 
@@ -140,4 +140,18 @@ h1 {
   width: 450px;
 }
 
+#technologiesImages img{
+  width: 150px;
+  height: 130px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.blackFont{
+  color: black;
+}
+
+.whiteFont{
+  color: white;
+}
 
