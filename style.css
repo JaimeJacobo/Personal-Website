@@ -155,3 +155,12 @@ h1 {
   color: white;
 }
 
+#technologiesText {
+  margin-left: 500px;
+  text-decoration: underline;
+}
+
+.smallFont {
+  font-size: 14px;
+  font-style: italic;
+}

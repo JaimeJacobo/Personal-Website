@@ -158,4 +158,40 @@ $('#cssLogo').hover(function(){
   $('#cssLogoText').removeClass('whiteFont');
   $('#cssLogoText').addClass('blackFont');
 });
+
+
+// This makes the react image to change from black and white to the colored version
+$('#reactLogo').hover(function(){
+  $('#reactLogo').attr('src', 'reactLogo.png');
+  $('#reactLogoText').removeClass('blackFont');
+  $('#reactLogoText').addClass('whiteFont');
+  }, function(){
+  $('#reactLogo').attr('src', 'reactLogoBW.png');
+  $('#reactLogoText').removeClass('whiteFont');
+  $('#reactLogoText').addClass('blackFont');
+});
+
+
+// This makes the react image to change from black and white to the colored version
+$('#nodejsLogo').hover(function(){
+  $('#nodejsLogo').attr('src', 'nodejsLogo.png');
+  $('#nodejsLogoText').removeClass('blackFont');
+  $('#nodejsLogoText').addClass('whiteFont');
+  }, function(){
+  $('#nodejsLogo').attr('src', 'nodejsLogoBW.png');
+  $('#nodejsLogoText').removeClass('whiteFont');
+  $('#nodejsLogoText').addClass('blackFont');
+});
+
+
+// This makes the react image to change from black and white to the colored version
+$('#photoshopLogo').hover(function(){
+  $('#photoshopLogo').attr('src', 'photoshopLogo.png');
+  $('#photoshopLogoText').removeClass('blackFont');
+  $('#photoshopLogoText').addClass('whiteFont');
+  }, function(){
+  $('#photoshopLogo').attr('src', 'photoshopLogoBW.png');
+  $('#photoshopLogoText').removeClass('whiteFont');
+  $('#photoshopLogoText').addClass('blackFont');
+});
   
