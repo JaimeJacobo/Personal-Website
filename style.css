@@ -108,3 +108,13 @@ h1 {
   padding-right: 200px;
   padding-bottom: 30px;
 }
+
+#projectPictures {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#blackjackPicture {
+  width: 30vw;
+}
