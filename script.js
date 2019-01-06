@@ -112,5 +112,26 @@ $('#navbarAboutMe').hover(function(){
 });
 
 
+// This makes the blackjack image to change from black and white to the colored version
+$('#blackjackImage').hover(function(){
+  $('#blackjackImage').attr('src', 'blackjack.png');
+  }, function(){
+  $('#blackjackImage').attr('src', 'blackjackBW.png');
+});
 
+
+// This makes the mylyquotes image to change from black and white to the colored version
+$('#myLyQuotesImage').hover(function(){
+  $('#myLyQuotesImage').attr('src', 'mylyquotes.png');
+  }, function(){
+  $('#myLyQuotesImage').attr('src', 'mylyquotesBW.png');
+});
+
+
+// This makes the letsgoflorida image to change from black and white to the colored version
+$('#letsGoFloridaImage').hover(function(){
+  $('#letsGoFloridaImage').attr('src', 'letsgoflo.png');
+  }, function(){
+  $('#letsGoFloridaImage').attr('src', 'letsgofloBW.png');
+});
   

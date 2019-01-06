@@ -113,8 +113,16 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-#blackjackPicture {
-  width: 30vw;
+#projectPictures img {
+  width: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px white solid;
+  cursor: pointer;
 }
+
+
+
