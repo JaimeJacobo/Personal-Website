@@ -164,3 +164,7 @@ h1 {
   font-size: 14px;
   font-style: italic;
 }
+
+.noCursor {
+  cursor: pointer;
+}

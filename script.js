@@ -138,11 +138,11 @@ $('#letsGoFloridaImage').hover(function(){
 
 // This makes the javascript image to change from black and white to the colored version
 $('#javascriptLogo').hover(function(){
-  $('#javascriptLogo').attr('src', 'javascriptLogo.jpg');
+  // $('#javascriptLogo').attr('src', 'javascriptLogo.jpg');
   $('#javascriptLogoText').removeClass('blackFont');
   $('#javascriptLogoText').addClass('whiteFont');
   }, function(){
-  $('#javascriptLogo').attr('src', 'javascriptLogoBW.jpg');
+  // $('#javascriptLogo').attr('src', 'javascriptLogoBW.jpg');
   $('#javascriptLogoText').removeClass('whiteFont');
   $('#javascriptLogoText').addClass('blackFont');
 });
@@ -150,11 +150,11 @@ $('#javascriptLogo').hover(function(){
 
 // This makes the css image to change from black and white to the colored version
 $('#cssLogo').hover(function(){
-  $('#cssLogo').attr('src', 'cssLogo.png');
+  // $('#cssLogo').attr('src', 'cssLogo.png');
   $('#cssLogoText').removeClass('blackFont');
   $('#cssLogoText').addClass('whiteFont');
   }, function(){
-  $('#cssLogo').attr('src', 'cssLogoBW.png');
+  // $('#cssLogo').attr('src', 'cssLogoBW.png');
   $('#cssLogoText').removeClass('whiteFont');
   $('#cssLogoText').addClass('blackFont');
 });
@@ -162,11 +162,11 @@ $('#cssLogo').hover(function(){
 
 // This makes the react image to change from black and white to the colored version
 $('#reactLogo').hover(function(){
-  $('#reactLogo').attr('src', 'reactLogo.png');
+  // $('#reactLogo').attr('src', 'reactLogo.png');
   $('#reactLogoText').removeClass('blackFont');
   $('#reactLogoText').addClass('whiteFont');
   }, function(){
-  $('#reactLogo').attr('src', 'reactLogoBW.png');
+  // $('#reactLogo').attr('src', 'reactLogoBW.png');
   $('#reactLogoText').removeClass('whiteFont');
   $('#reactLogoText').addClass('blackFont');
 });
@@ -174,11 +174,11 @@ $('#reactLogo').hover(function(){
 
 // This makes the react image to change from black and white to the colored version
 $('#nodejsLogo').hover(function(){
-  $('#nodejsLogo').attr('src', 'nodejsLogo.png');
+  // $('#nodejsLogo').attr('src', 'nodejsLogo.png');
   $('#nodejsLogoText').removeClass('blackFont');
   $('#nodejsLogoText').addClass('whiteFont');
   }, function(){
-  $('#nodejsLogo').attr('src', 'nodejsLogoBW.png');
+  // $('#nodejsLogo').attr('src', 'nodejsLogoBW.png');
   $('#nodejsLogoText').removeClass('whiteFont');
   $('#nodejsLogoText').addClass('blackFont');
 });
@@ -186,11 +186,11 @@ $('#nodejsLogo').hover(function(){
 
 // This makes the react image to change from black and white to the colored version
 $('#photoshopLogo').hover(function(){
-  $('#photoshopLogo').attr('src', 'photoshopLogo.png');
+  // $('#photoshopLogo').attr('src', 'photoshopLogo.png');
   $('#photoshopLogoText').removeClass('blackFont');
   $('#photoshopLogoText').addClass('whiteFont');
   }, function(){
-  $('#photoshopLogo').attr('src', 'photoshopLogoBW.png');
+  // $('#photoshopLogo').attr('src', 'photoshopLogoBW.png');
   $('#photoshopLogoText').removeClass('whiteFont');
   $('#photoshopLogoText').addClass('blackFont');
 });
