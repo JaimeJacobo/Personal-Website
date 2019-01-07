@@ -171,16 +171,23 @@ h1 {
 
 #myImageDiv img {
   width: 500px;
+  border-radius: 5px;
 }
 
 .mediaImages {
   width: 100px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .flexSpaceEvenly {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -196,4 +203,16 @@ h1 {
 .flexMedia {
   display: flex;
   align-items: center;
+}
+
+#myImageDiv p {
+  margin: 10px 0;
+}
+
+#myMediaDiv img {
+  transition: all .2s ease-in-out;
+}
+
+#myMediaDiv img:hover {
+  transform: scale(1.1);
 }
