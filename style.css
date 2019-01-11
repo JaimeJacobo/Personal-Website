@@ -235,15 +235,17 @@ h1 {
 @media screen and (max-width: 660px){
   #projectPictures img {
     width: 300px;
-    /* margin: 10px;
-    border-radius: 5px;
-    border: 0px white solid;
-    cursor: pointer;
-    transition: all .2s ease-in-out; */
   }
 
   .projectInfoParagraphs{
     width: 300px;
+  }
+
+  #technologiesImages img{
+    width: 110px;
+    height: 90px;
+    /* margin: 10px;
+    margin-top: 50px; */
   }
 }
 
