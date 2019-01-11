@@ -66,7 +66,7 @@ h1 {
 }
 
 #navbarList {
-  margin: 10px auto 0 auto;
+  margin: 0;
   width: 100vw;
 }
 
@@ -224,6 +224,14 @@ h1 {
   transform: scale(1.1);
 }
 
+.introductionText {
+  text-align: center;
+}
+
+#top {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 660px){
   #projectPictures img {
     width: 300px;
@@ -239,3 +247,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 850px){
+  .webTitles {
+    font-size: 10vw;
+  }
+
+  .biggerFont {
+    font-size: 20vw;
+  }
+}
