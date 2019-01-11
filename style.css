@@ -27,7 +27,14 @@ h1 {
 .maingPageBackgroundImage {
   background-image: url('computerBackground.jpeg');
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 100vh; */
+  /* width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; */
 }
 
 .webTitles {
@@ -217,9 +224,18 @@ h1 {
   transform: scale(1.1);
 }
 
-@media (min-width: 1500px){
-  div.col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  };
+@media screen and (max-width: 660px){
+  #projectPictures img {
+    width: 300px;
+    /* margin: 10px;
+    border-radius: 5px;
+    border: 0px white solid;
+    cursor: pointer;
+    transition: all .2s ease-in-out; */
+  }
+
+  .projectInfoParagraphs{
+    width: 300px;
+  }
 }
+
