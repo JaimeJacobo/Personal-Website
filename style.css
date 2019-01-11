@@ -24,6 +24,11 @@ h1 {
   height: 100vh;
 }
 
+.restOfTheScreensContent{
+  background-color: rgb(0,0,0);
+  width: 100vw;
+}
+
 .maingPageBackgroundImage {
   background-image: url('computerBackground.jpeg');
   background-size: cover;
@@ -41,6 +46,7 @@ h1 {
   color: rgb(255,255,255);
   font-size: 6vw;
   padding: 20px 20px;
+  text-decoration: underline;
 }
 
 
@@ -190,6 +196,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-flow: wrap;
 }
 
 .flexSpaceBetween {
@@ -232,6 +239,10 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.marginLeft {
+  margin: 0 10px;
+}
+
 @media screen and (max-width: 660px){
   #projectPictures img {
     width: 300px;
@@ -247,6 +258,19 @@ h1 {
     /* margin: 10px;
     margin-top: 50px; */
   }
+
+  .mediaImages {
+    width: 70px;
+  }
+
+  #myImageDiv img {
+    width: 300px;
+  }
+
+  #myImageDiv p {
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 850px){

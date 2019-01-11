@@ -25,6 +25,23 @@
   <div id="homeScreen" class="firstScreenContent flexCentered maingPageBackgroundImage fadeIn">
     <h1 class="introductionText webTitles fadeIn">Welcome to my Website</h1>
   </div>
+  <div id="aboutMe" class="restOfTheScreensContent">
+    <h1 class="webTitles">About Me</h1>
+    <div id="prueba2">
+        <div id="contentOfWhoAmI" class="marginLeft">
+            <h2>Who am I?</h2>
+            <p>My name is Jaime. I come from Spain, where I studied Psychology in Madrid. During my final year of the degree, I did an internship in a technology company. After I finished it, I decided to aim my life towards a new passion: programming.<br />I began a bootcamp focused on JavaScript and Web Development in Miami. After finishing it, my desire to keep learning about this amazing world kept growing.</p> 
+          </div>
+          <div id="contentOfWhatDoILikeToDo" class="marginLeft">
+            <h2>What do I like to do?</h2>
+            <p>Programming aside, my two big passions are sports and music. I have been playing all kinds of sports since I was a little kid. If I had to chose 2 sports, I would pick skateboarding and football.<br />About music, I love listening to music everywhere I go. From a big music festival with my friends to putting my headphones on when I'm coding. Every moment is perfect to listen to some music.</p>
+          </div>
+          <div id="contentOfWhereDoIComeFrom" class="marginLeft">
+            <h2>Where do I come from?</h2>
+            <p>I was born in Mexico, but I have lived in Spain for the last 12 years. After studying Psychology in Madrid, I decided to make a change in my life and move to Miami to begin a whole new adventure. When I think of my future, I see myself living in a place where I feel comfortable with myself, where I can keep growing as a developer, as a designer and as a person.</p>
+          </div>
+    </div>
+  </div>
   
   <!-- <div id="aboutMe" class="firstScreenContent" >
     <h1 class="webTitles">About Me</h1>
@@ -48,76 +65,78 @@
       
     </div>
   </div> -->
-  <div id="myProjects" class="firstScreenContent">
-    <h1 class="webTitles">My Projects</h1>
-    <div id="projectPictures" class="flexWrap">
-      <div class="flexCenteredColumn projectsInfo">
-        <a href="https://jaimejacobo.github.io/IronJack-Blackjack-version/" target="_blank"><img src="blackjackBW.png" alt="Blackjack Picture" id="blackjackImage" class="grow"></a>
-        <h2>IronJack</h2>
-        <p class="projectInfoParagraphs">Ironjack is a Blackjack version game, a comparing card game that uses math and probabilities to determine the winner. <span class="smallFont">(JavaScript, HTML, CSS, Bootstrap, jQuery)</span></p>
+  <div id="prueba">
+    <div id="myProjects" class="restOfTheScreensContent">
+      <h1 class="webTitles">My Projects</h1>
+      <div id="projectPictures" class="flexWrap">
+        <div class="flexCenteredColumn projectsInfo">
+          <a href="https://jaimejacobo.github.io/IronJack-Blackjack-version/" target="_blank"><img src="blackjackBW.png" alt="Blackjack Picture" id="blackjackImage" class="grow"></a>
+          <h2>IronJack</h2>
+          <p class="projectInfoParagraphs">Ironjack is a Blackjack version game, a comparing card game that uses math and probabilities to determine the winner. <span class="smallFont">(JavaScript, HTML, CSS, Bootstrap, jQuery)</span></p>
+        </div>
+        <div class="flexCenteredColumn projectsInfo">
+          <a href="https://mylyquotes.herokuapp.com/" target="_blank"><img src="mylyquotesBW.png" alt="Blackjack Picture" id="myLyQuotesImage"></a>
+          <h2>MyLy Quotes</h2>
+          <p class="projectInfoParagraphs">MyLy Quotes is a web application where you can upload, edit and delete your favorite music quotes. <span class="smallFont">(JavaScript, HTML, CSS, jQuery, Bootstrap, Node.js, MongoDB)</span></p>
+        </div>
+        <div class="flexCenteredColumn projectsInfo">
+          <a href="https://lets-go-flo.herokuapp.com/" target="_blank"><img src="letsgofloBW.png" alt="Blackjack Picture" id="letsGoFloridaImage"></a>
+          <h2>Let's Go Florida</h2>
+          <p class="projectInfoParagraphs">Let's Go Florida is a web application that provides you information about hotels, restaurants and activities of any city in Florida. <span class="smallFont">(JavaScript, React, HTML, CSS, Photoshop, Node.js)</span></p>
+        </div>
       </div>
-      <div class="flexCenteredColumn projectsInfo">
-        <a href="https://mylyquotes.herokuapp.com/" target="_blank"><img src="mylyquotesBW.png" alt="Blackjack Picture" id="myLyQuotesImage"></a>
-        <h2>MyLy Quotes</h2>
-        <p class="projectInfoParagraphs">MyLy Quotes is a web application where you can upload, edit and delete your favorite music quotes. <span class="smallFont">(JavaScript, HTML, CSS, jQuery, Bootstrap, Node.js, MongoDB)</span></p>
-      </div>
-      <div class="flexCenteredColumn projectsInfo">
-        <a href="https://lets-go-flo.herokuapp.com/" target="_blank"><img src="letsgofloBW.png" alt="Blackjack Picture" id="letsGoFloridaImage"></a>
-        <h2>Let's Go Florida</h2>
-        <p class="projectInfoParagraphs">Let's Go Florida is a web application that provides you information about hotels, restaurants and activities of any city in Florida. <span class="smallFont">(JavaScript, React, HTML, CSS, Photoshop, Node.js)</span></p>
+      <div id="technologiesImages">
+        <div class="flexWrap">
+          <div class="flexCenteredColumn">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="javascriptLogo.jpg" alt="" id="javascriptLogo" class="noCursor"></a>
+            <h4 id="javascriptLogoText" class="blackFont">JavaScript</h4>
+          </div>
+          <div class="flexCenteredColumn">
+            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img src="cssLogo.png" alt="" id="cssLogo" class="noCursor"></a>
+            <h4 id="cssLogoText" class="blackFont">CSS</h4>
+          </div>
+          <div class="flexCenteredColumn">
+            <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src="reactLogo.png" alt="" id="reactLogo" class="noCursor"></a>
+            <h4 id="reactLogoText" class="blackFont">React</h4>
+          </div>
+          <div class="flexCenteredColumn">
+            <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="nodejsLogo.png" alt="" id="nodejsLogo" class="noCursor"></a>
+            <h4 id="nodejsLogoText" class="blackFont">Node.js</h4>
+          </div>
+          <div class="flexCenteredColumn">
+            <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank"><img src="photoshopLogo.png" alt="" id="photoshopLogo" class="noCursor"></a>
+            <h4 id="photoshopLogoText" class="blackFont">Photoshop</h4>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="technologiesImages">
-      <div class="flexWrap">
-        <div class="flexCenteredColumn">
-          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="javascriptLogo.jpg" alt="" id="javascriptLogo" class="noCursor"></a>
-          <h4 id="javascriptLogoText" class="blackFont">JavaScript</h4>
+    <div id="media" class="restOfTheScreensContent">
+      <h1 class="webTitles">Professional Media</h1>
+      <div class="flexSpaceEvenly height70">
+        <div id="myImageDiv">
+          <img src="personalImage.jpg" alt="My Personal Image">
+          <div class="flexSpaceBetween">
+            <p>Jaime Jacobo</p>
+            <p>jaimejacobordv@gmail.com</p> 
+          </div>
         </div>
-        <div class="flexCenteredColumn">
-          <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img src="cssLogo.png" alt="" id="cssLogo" class="noCursor"></a>
-          <h4 id="cssLogoText" class="blackFont">CSS</h4>
-        </div>
-        <div class="flexCenteredColumn">
-          <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src="reactLogo.png" alt="" id="reactLogo" class="noCursor"></a>
-          <h4 id="reactLogoText" class="blackFont">React</h4>
-        </div>
-        <div class="flexCenteredColumn">
-          <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="nodejsLogo.png" alt="" id="nodejsLogo" class="noCursor"></a>
-          <h4 id="nodejsLogoText" class="blackFont">Node.js</h4>
-        </div>
-        <div class="flexCenteredColumn">
-          <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank"><img src="photoshopLogo.png" alt="" id="photoshopLogo" class="noCursor"></a>
-          <h4 id="photoshopLogoText" class="blackFont">Photoshop</h4>
+        <div id="myMediaDiv">
+          <div id="linkedinDiv" class="flexMedia grow">
+            <a href="https://www.linkedin.com/in/jaimejacobo/" target="_blank"><img src="LinkedIn_logo_initials.png" alt="" class="mediaImages"></a>
+            <p>LinkedIn</p>
+          </div>
+          <div id="githubDiv" class="flexMedia">
+            <a href="https://github.com/JaimeJacobo" target="_blank"><img src="githubLogo.png" alt="" class="mediaImages"></a>
+              <p>GitHub</p>
+          </div>
+          <div id="codewarsDiv" class="flexMedia">
+            <a href="https://www.codewars.com/users/JaimeJacobo" target="_blank"><img src="codewarsLogo.png" alt="" class="mediaImages"></a>
+              <p>CodeWars</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div id="media" class="firstScreenContent">
-    <h1 class="webTitles">Professional Media</h1>
-    <div class="flexSpaceEvenly height70">
-      <div id="myImageDiv">
-        <img src="personalImage.jpg" alt="My Personal Image">
-        <div class="flexSpaceBetween">
-          <p>Jaime Jacobo</p>
-          <p>jaimejacobordv@gmail.com</p> 
-        </div>
-      </div>
-      <div id="myMediaDiv">
-        <div id="linkedinDiv" class="flexMedia grow">
-          <a href="https://www.linkedin.com/in/jaimejacobo/" target="_blank"><img src="LinkedIn_logo_initials.png" alt="" class="mediaImages"></a>
-          <p>LinkedIn</p>
-        </div>
-        <div id="githubDiv" class="flexMedia">
-          <a href="https://github.com/JaimeJacobo" target="_blank"><img src="githubLogo.png" alt="" class="mediaImages"></a>
-            <p>GitHub</p>
-        </div>
-        <div id="codewarsDiv" class="flexMedia">
-          <a href="https://www.codewars.com/users/JaimeJacobo" target="_blank"><img src="codewarsLogo.png" alt="" class="mediaImages"></a>
-            <p>CodeWars</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
 
 
