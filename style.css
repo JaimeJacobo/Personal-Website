@@ -246,6 +246,14 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#top li {
+  transition: all .2s ease-in-out; 
+}
+
+#top li:hover {
+  transform: scale(1.3);
+}
+
 .marginLeft {
   margin: 0 10px;
 }
@@ -278,6 +286,10 @@ h1 {
     font-size: 14px;
   }
 
+  #top li:hover {
+    transform: scale(1);
+  }
+
 }
 
 @media screen and (max-width: 850px){
@@ -291,5 +303,37 @@ h1 {
 
   .biggerFont {
     font-size: 20vw;
+  }
+}
+
+@media screen and (min-width: 750px){
+  #prueba2 p{
+    font-size: 20px;
+  }
+
+  #contentOfWhoAmI {
+    margin: 0 300px;
+  }
+
+  #contentOfWhatDoILikeToDo {
+    margin: 0 300px;
+  }
+
+  #contentOfWhereDoIComeFrom {
+    margin: 0 300px;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  #contentOfWhoAmI {
+    margin: 0 600px;
+  }
+
+  #contentOfWhatDoILikeToDo {
+    margin: 0 600px;
+  }
+
+  #contentOfWhereDoIComeFrom {
+    margin: 0 600px;
   }
 }

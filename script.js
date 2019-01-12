@@ -1,15 +1,15 @@
 
 
 
-  $('#top').hide();
+//   $('#top').hide();
 
-  document.onload = setTimeout(() =>{
-    $('#top').show();
-  },500)
+//   document.onload = setTimeout(() =>{
+//     $('#top').show();
+//   },500)
 
-document.onload = setTimeout(() =>{
-  $('.introductionText').addClass('fadeOut');
-},3000)
+// document.onload = setTimeout(() =>{
+//   $('.introductionText').addClass('fadeOut');
+// },3000)
 
 document.onload = setTimeout(() =>{
   $('.introductionText').removeClass('fadeOut');
@@ -19,97 +19,97 @@ document.onload = setTimeout(() =>{
 },4000)
 
 
-// NAVBAR PRUEBAS
+// // NAVBAR PRUEBAS
 
-$(window).scroll(function() {
-  // 100 = The point you would like to fade the nav in.
+// $(window).scroll(function() {
+//   // 100 = The point you would like to fade the nav in.
     
-  if ($(window).scrollTop() == 100 ){
+//   if ($(window).scrollTop() == 100 ){
       
-      // $('.bg').addClass('showNav');
-      console.log('bubucela')
+//       // $('.bg').addClass('showNav');
+//       console.log('bubucela')
       
-  } else {
+//   } else {
       
-    $('.bg').removeClass('showNav');
+//     $('.bg').removeClass('showNav');
       
-    };   	
-});
+//     };   	
+// });
   
-  $('.scroll').on('click', function(e){		
-      e.preventDefault()
+//   $('.scroll').on('click', function(e){		
+//       e.preventDefault()
       
-    $('html, body').animate({
-        scrollTop : $(this.hash).offset().top
-      }, 3000);
-  });
+//     $('html, body').animate({
+//         scrollTop : $(this.hash).offset().top
+//       }, 3000);
+//   });
 
-  // FINAL NAVBAR PRUEBAS
+//   // FINAL NAVBAR PRUEBAS
 
 
   // EFECTO HOVER PRUEBAS
 
   
-//This makes the rest of the Navbar dissapear when you hover over 'Contact'
+// //This makes the rest of the Navbar dissapear when you hover over 'Contact'
 
-  $('#navbarContact').hover(function(){
-    $('#navbarSocialMedia').addClass('fadeOut');
-    $('#navbarMyProjects').addClass('fadeOut');
-    $('#navbarAboutMe').addClass('fadeOut');
-    }, function(){
-    $('#navbarSocialMedia').removeClass('fadeOut');
-    $('#navbarSocialMedia').addClass('fadeIn');
-    $('#navbarMyProjects').removeClass('fadeOut');
-    $('#navbarMyProjects').addClass('fadeIn');
-    $('#navbarAboutMe').removeClass('fadeOut');
-    $('#navbarAboutMe').addClass('fadeIn');
-  });
-
-
-
-//This makes the rest of the Navbar dissapear when you hover over 'Social Media'
-$('#navbarSocialMedia').hover(function(){
-  $('#navbarContact').addClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeOut');
-  }, function(){
-  $('#navbarContact').removeClass('fadeOut');
-  $('#navbarContact').addClass('fadeIn');
-  $('#navbarMyProjects').removeClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeIn');
-  $('#navbarAboutMe').removeClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeIn');
-});
+//   $('#navbarContact').hover(function(){
+//     $('#navbarSocialMedia').addClass('fadeOut');
+//     $('#navbarMyProjects').addClass('fadeOut');
+//     $('#navbarAboutMe').addClass('fadeOut');
+//     }, function(){
+//     $('#navbarSocialMedia').removeClass('fadeOut');
+//     $('#navbarSocialMedia').addClass('fadeIn');
+//     $('#navbarMyProjects').removeClass('fadeOut');
+//     $('#navbarMyProjects').addClass('fadeIn');
+//     $('#navbarAboutMe').removeClass('fadeOut');
+//     $('#navbarAboutMe').addClass('fadeIn');
+//   });
 
 
-//This makes the rest of the Navbar dissapear when you hover over 'My Projects'
-$('#navbarMyProjects').hover(function(){
-  $('#navbarContact').addClass('fadeOut');
-  $('#navbarSocialMedia').addClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeOut');
-  }, function(){
-  $('#navbarContact').removeClass('fadeOut');
-  $('#navbarContact').addClass('fadeIn');
-  $('#navbarSocialMedia').removeClass('fadeOut');
-  $('#navbarSocialMedia').addClass('fadeIn');
-  $('#navbarAboutMe').removeClass('fadeOut');
-  $('#navbarAboutMe').addClass('fadeIn');
-});
+
+// //This makes the rest of the Navbar dissapear when you hover over 'Social Media'
+// $('#navbarSocialMedia').hover(function(){
+//   $('#navbarContact').addClass('fadeOut');
+//   $('#navbarMyProjects').addClass('fadeOut');
+//   $('#navbarAboutMe').addClass('fadeOut');
+//   }, function(){
+//   $('#navbarContact').removeClass('fadeOut');
+//   $('#navbarContact').addClass('fadeIn');
+//   $('#navbarMyProjects').removeClass('fadeOut');
+//   $('#navbarMyProjects').addClass('fadeIn');
+//   $('#navbarAboutMe').removeClass('fadeOut');
+//   $('#navbarAboutMe').addClass('fadeIn');
+// });
 
 
-//This makes the rest of the Navbar dissapear when you hover over 'About Me'
-$('#navbarAboutMe').hover(function(){
-  $('#navbarContact').addClass('fadeOut');
-  $('#navbarSocialMedia').addClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeOut');
-  }, function(){
-  $('#navbarContact').removeClass('fadeOut');
-  $('#navbarContact').addClass('fadeIn');
-  $('#navbarSocialMedia').removeClass('fadeOut');
-  $('#navbarSocialMedia').addClass('fadeIn');
-  $('#navbarMyProjects').removeClass('fadeOut');
-  $('#navbarMyProjects').addClass('fadeIn');
-});
+// //This makes the rest of the Navbar dissapear when you hover over 'My Projects'
+// $('#navbarMyProjects').hover(function(){
+//   $('#navbarContact').addClass('fadeOut');
+//   $('#navbarSocialMedia').addClass('fadeOut');
+//   $('#navbarAboutMe').addClass('fadeOut');
+//   }, function(){
+//   $('#navbarContact').removeClass('fadeOut');
+//   $('#navbarContact').addClass('fadeIn');
+//   $('#navbarSocialMedia').removeClass('fadeOut');
+//   $('#navbarSocialMedia').addClass('fadeIn');
+//   $('#navbarAboutMe').removeClass('fadeOut');
+//   $('#navbarAboutMe').addClass('fadeIn');
+// });
+
+
+// //This makes the rest of the Navbar dissapear when you hover over 'About Me'
+// $('#navbarAboutMe').hover(function(){
+//   $('#navbarContact').addClass('fadeOut');
+//   $('#navbarSocialMedia').addClass('fadeOut');
+//   $('#navbarMyProjects').addClass('fadeOut');
+//   }, function(){
+//   $('#navbarContact').removeClass('fadeOut');
+//   $('#navbarContact').addClass('fadeIn');
+//   $('#navbarSocialMedia').removeClass('fadeOut');
+//   $('#navbarSocialMedia').addClass('fadeIn');
+//   $('#navbarMyProjects').removeClass('fadeOut');
+//   $('#navbarMyProjects').addClass('fadeIn');
+// });
 
 
 // This makes the blackjack image to change from black and white to the colored version
