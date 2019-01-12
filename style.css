@@ -250,6 +250,10 @@ h1 {
   margin: 0 10px;
 }
 
+
+
+
+
 @media screen and (max-width: 660px){
   #projectPictures img {
     width: 300px;
@@ -292,6 +296,11 @@ h1 {
     font-size: 10vw;
   }
 
+  
+  .introductionText {
+    font-size: 15vw;
+  }
+  
   .biggerFont {
     font-size: 20vw;
   }

@@ -7,9 +7,9 @@
 //     $('#top').show();
 //   },500)
 
-// document.onload = setTimeout(() =>{
-//   $('.introductionText').addClass('fadeOut');
-// },3000)
+document.onload = setTimeout(() =>{
+  $('.introductionText').addClass('fadeOut');
+},3000)
 
 document.onload = setTimeout(() =>{
   $('.introductionText').removeClass('fadeOut');
