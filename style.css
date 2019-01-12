@@ -32,14 +32,6 @@ h1 {
 .maingPageBackgroundImage {
   background-image: url('computerBackground.jpeg');
   background-size: cover;
-  /* background-repeat: no-repeat;
-  position: absolute;
-  width: 100vw;
-  height: 100vh; */
-  /* width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; */
 }
 
 .webTitles {
@@ -289,7 +281,6 @@ h1 {
   #top li:hover {
     transform: scale(1);
   }
-
 }
 
 @media screen and (max-width: 850px){
