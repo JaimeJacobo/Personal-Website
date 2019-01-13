@@ -194,4 +194,16 @@ $('#photoshopLogo').hover(function(){
   $('#photoshopLogoText').removeClass('whiteFont');
   $('#photoshopLogoText').addClass('blackFont');
 });
+
+
+// This makes the bootstrap image to change from black and white to the colored version
+$('#bootstrapLogo').hover(function(){
+  // $('#bootstrapLogo').attr('src', 'bootstrapLogo.png');
+  $('#bootstrapLogoText').removeClass('blackFont');
+  $('#bootstrapLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#bootstrapLogo').attr('src', 'bootstrapLogoBW.png');
+  $('#bootstrapLogoText').removeClass('whiteFont');
+  $('#bootstrapLogoText').addClass('blackFont');
+});
   
