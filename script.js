@@ -207,3 +207,74 @@ $('#bootstrapLogo').hover(function(){
   $('#bootstrapLogoText').addClass('blackFont');
 });
   
+
+// This makes the mysql image to change from black and white to the colored version
+$('#mysqlLogo').hover(function(){
+  // $('#mysqlLogo').attr('src', 'mysqlLogo.png');
+  $('#mysqlLogoText').removeClass('blackFont');
+  $('#mysqlLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#mysqlLogo').attr('src', 'mysqlLogoBW.png');
+  $('#mysqlLogoText').removeClass('whiteFont');
+  $('#mysqlLogoText').addClass('blackFont');
+});
+  
+
+// This makes the mongoDB image to change from black and white to the colored version
+$('#mongoDBLogo').hover(function(){
+  // $('#mongoDBLogo').attr('src', 'mongoDBLogo.png');
+  $('#mongoDBLogoText').removeClass('blackFont');
+  $('#mongoDBLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#mongoDBLogo').attr('src', 'mongoDBLogoBW.png');
+  $('#mongoDBLogoText').removeClass('whiteFont');
+  $('#mongoDBLogoText').addClass('blackFont');
+});
+
+
+// This makes the ajax image to change from black and white to the colored version
+$('#ajaxLogo').hover(function(){
+  // $('#ajaxLogo').attr('src', 'ajaxLogo.png');
+  $('#ajaxLogoText').removeClass('blackFont');
+  $('#ajaxLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#ajaxLogo').attr('src', 'ajaxLogoBW.png');
+  $('#ajaxLogoText').removeClass('whiteFont');
+  $('#ajaxLogoText').addClass('blackFont');
+});
+
+
+// This makes the jquery image to change from black and white to the colored version
+$('#jqueryLogo').hover(function(){
+  // $('#jqueryLogo').attr('src', 'jqueryLogo.png');
+  $('#jqueryLogoText').removeClass('blackFont');
+  $('#jqueryLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#jqueryLogo').attr('src', 'jqueryLogoBW.png');
+  $('#jqueryLogoText').removeClass('whiteFont');
+  $('#jqueryLogoText').addClass('blackFont');
+});
+
+
+// This makes the html image to change from black and white to the colored version
+$('#htmlLogo').hover(function(){
+  // $('#htmlLogo').attr('src', 'htmlLogo.png');
+  $('#htmlLogoText').removeClass('blackFont');
+  $('#htmlLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#htmlLogo').attr('src', 'htmlLogoBW.png');
+  $('#htmlLogoText').removeClass('whiteFont');
+  $('#htmlLogoText').addClass('blackFont');
+});
+
+
+// This makes the git image to change from black and white to the colored version
+$('#gitLogo').hover(function(){
+  // $('#gitLogo').attr('src', 'gitLogo.png');
+  $('#gitLogoText').removeClass('blackFont');
+  $('#gitLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#gitLogo').attr('src', 'gitLogoBW.png');
+  $('#gitLogoText').removeClass('whiteFont');
+  $('#gitLogoText').addClass('blackFont');
+});

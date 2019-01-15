@@ -155,8 +155,7 @@ h1 {
 #technologiesImages img{
   width: 150px;
   height: 130px;
-  margin: 10px;
-  margin-top: 50px;
+  margin: 50px 50px 20px 50px;
 }
 
 .blackFont{
@@ -250,7 +249,7 @@ h1 {
   margin: 0 10px;
 }
 
-#prueba3 h2 {
+#technicalSkills h2 {
   text-align: center;
 }
 
@@ -312,6 +311,20 @@ h1 {
   .biggerFont {
     font-size: 20vw;
   }
+
+  #technologiesImages img{
+    margin: 50px 30px 20px 30px;
+  }
+
+  #technologiesImages h4 {
+    color: white;
+  }
+
+  #otherSkillsTitle {
+    margin-top: 50px;
+  }
+
+
 }
 
 @media screen and (min-width: 750px){
