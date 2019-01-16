@@ -339,6 +339,9 @@ h1 {
     margin-top: 50px;
   }
 
+  #titleDiv h2 {
+    display: none;
+  }
 
 }
 
