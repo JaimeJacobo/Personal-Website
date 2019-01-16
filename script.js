@@ -16,7 +16,15 @@ document.onload = setTimeout(() =>{
   $('.introductionText').html('Jaime Jacobo');
   $('.introductionText').addClass('biggerFont');
   $('.introductionText').addClass('fadeIn');
+  $('#titleDiv').html('<h2>Web Developer</h2><h2>Web Designer</h2>');
+  $('#titleDiv').addClass('fadeIn2');
+  
 },4000)
+
+// document.onload = setTimeout(()=>{
+//   $('#titleDiv').html('<h2>Web Developer</h2><h2>Web Designer</h2>');
+//   $('#titleDiv').addClass('fadeIn');
+// },5000)
 
 
 // // NAVBAR PRUEBAS

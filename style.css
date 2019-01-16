@@ -56,9 +56,24 @@ h1 {
   align-items: center;
 }
 
+.flexCenteredColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .biggerFont {
   font-size: 10vw;
 }
+
+#titleDiv {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 
 
