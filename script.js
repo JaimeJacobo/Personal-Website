@@ -286,3 +286,15 @@ $('#gitLogo').hover(function(){
   $('#gitLogoText').removeClass('whiteFont');
   $('#gitLogoText').addClass('blackFont');
 });
+
+
+// This makes the java image to change from black and white to the colored version
+$('#javaLogo').hover(function(){
+  // $('#javaLogo').attr('src', 'javaLogo.png');
+  $('#javaLogoText').removeClass('blackFont');
+  $('#javaLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#javaLogo').attr('src', 'javaLogoBW.png');
+  $('#javaLogoText').removeClass('whiteFont');
+  $('#javaLogoText').addClass('blackFont');
+});
