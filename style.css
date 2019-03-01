@@ -350,6 +350,11 @@ h1 {
     font-size: 20px;
   }
 
+  #prueba2 div{
+    max-width: 44em;
+    margin: 0 auto;
+  }
+
   #contentOfWhoAmI {
     margin: 0 300px;
   }
