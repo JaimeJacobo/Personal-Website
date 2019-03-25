@@ -298,3 +298,20 @@ $('#javaLogo').hover(function(){
   $('#javaLogoText').removeClass('whiteFont');
   $('#javaLogoText').addClass('blackFont');
 });
+
+
+
+
+// Functions to change the language of the page
+
+$('.spanish').hide();
+
+$('#spanishPage').click(()=>{
+  $('.english').hide();
+  $('.spanish').show();
+})
+
+$('#englishPage').click(()=>{
+  $('.spanish').hide();
+  $('.english').show();
+})
