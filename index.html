@@ -8,6 +8,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="wickedcss.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <title>Jaime Jacobo - Personal Website</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
 
   <div id="top" class="containerNav slideDown">
     <ul id="languagePickerList" class="languagePicker">
-      <li id="englishPage" class="switch-lang"><img id="englishImage" src="http://i65.tinypic.com/2d0kyno.png"/>English</li>
+      <li id="englishPage"><img id="englishImage" src="usFlag.png"/>English</li>
       <li id="spanishPage"><img id="spanishImage" src="spainFlag.png"/>Spanish</li>
     </ul>
     <ul id="navbarList">
@@ -26,7 +27,7 @@
     </ul>
   </div>
   
-  <div id="homeScreen" class="firstScreenContent flexCenteredColumnCenter maingPageBackgroundImage fadeIn">
+  <div id="homeScreen" class="firstScreenContent flexCenteredColumnCenter mainPageBackgroundImage fadeIn">
     <h1 class="introductionText mainTitle fadeIn">Welcome to my Website</h1>
     <div id="titleDiv">
       <!-- <h2>Web Developer</h2>
@@ -37,7 +38,7 @@
     <h1 id="aboutMeTitle" class="english webTitles">About Me</h1>
     <h1 id="aboutMeTitle" class="spanish webTitles">Sobre Mí</h1>
     <div id="aboutMeInformationAndPictureDiv">
-      <div id="aboutMeInformation">
+      <div id="aboutMeInformation" class="english">
         <div id="contentOfWhoAmI" class="marginLeft">
           <h2>Who am I?</h2>
           <p>
@@ -59,7 +60,42 @@
             Regarding music, I love listening to it everywhere I go. From a big music festival with my friends to putting my headphones on when I’m coding; every moment is a perfect opportunity to listen to some music.
           </p>
         </div>
-        <div id="contentOfWhereDoIComeFrom" class="marginLeft">
+        <div id="contentWhereDoILearnFrom" class="marginLeft">
+          <h2>Where do I come from?</h2>
+          <p>
+            I was born in Mexico, but I have lived in Spain for the last 12 years. After studying for a Bachelor’s degree in Psychology back in Madrid, I decided to make a change in my life and move to Miami to begin a whole new adventure.
+          </p>
+          <p>
+            When I think of my future, I see myself living in a place where I can keep growing as a developer, as a designer and as a person.
+          </p>
+        </div>
+      </div>
+      <div id="aboutMeInformation" class="spanish">
+        <div id="contentOfWhoAmI" class="marginLeft">
+          <h2>¿Quién soy?</h2>
+          <p>
+            Mi nombre es Jaime, y me apasiona la programación. Después de realizar mis prácticas universitarias en una compañía tecnológica en Madrid, decidí embarcarme en un nueva aventura y viajar a Miami, donde estudié un bootcamp intensivo de Desarrollo Web durante varios meses.
+          </p>
+          <p>
+            Después de esta gran experiencia, viajé de vuelta a Madrid donde empecé mi trayectoria profesional como Frontend Developer. Desde entonces, cada día busco adquirir nuevos conocimientos, desde principios de diseño web hasta Inteligencia Artificial. 
+          </p> 
+          <p>
+            Soy una persona muy activa y persistente, que aprende rápido y que aprovecha cada oportunidad para aprender algo nuevo.
+          </p>
+        </div>
+        <div id="contentOfWhatDoILikeToDo" class="marginLeft">
+          <h2>¿Qué me guta hacer?</h2>
+          <p>
+            Mis dos lenguajes de programación favoritos son Python y JavaScript. Disfruto mucho aprendiendo de estas tecnologías, e invierto la gran parte de mi tiempo en aprender nuevos conceptos teóricos y prácticos de estos lenguajes. No obstante, me llaman mucho la atención otra serie de lenguajes como Java, C++, etc., sobre los cuales voy indagando poco a poco.
+          </p>
+          <p>
+            Programación aparte, mis dos grandes pasiones son el deporte y la música. He practicado todo tipo de deportes desde niño. Si tuviese que elegir dos deportes, elegiría el fútbol americano y el skateboarding. 
+          </p>
+          <p>
+            Sobre la música, disfruto enormemente escucharla en cada momento. Desde un festival de música con mis amigos hasta ponerme los cascos cuando estoy programando; cada momento es una excelente oportunidad para escuchar algo de música.
+          </p>
+        </div>
+        <div id="contentWhereDoILearnFrom" class="marginLeft">
           <h2>Where do I come from?</h2>
           <p>
             I was born in Mexico, but I have lived in Spain for the last 12 years. After studying for a Bachelor’s degree in Psychology back in Madrid, I decided to make a change in my life and move to Miami to begin a whole new adventure.
@@ -122,8 +158,8 @@
               <h4 id="htmlLogoText" class="blackFont">HTML</h4>
             </div>
             <div class="flexCenteredColumn">
-              <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src="reactLogo.png" alt="" id="reactLogo" class="noCursor"></a>
-              <h4 id="reactLogoText" class="blackFont">React</h4>
+              <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="pythonLogo.png" alt="" id="pythonLogo" class="noCursor"></a>
+              <h4 id="pythonLogoText" class="blackFont">Python</h4>
             </div>
             <div class="flexCenteredColumn">
               <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank"><img src="jqueryLogo.png" alt="" id="jqueryLogo" class="noCursor"></a>
@@ -132,6 +168,14 @@
           </div>
           <h2 id="otherSkillsTitle">Other skills:</h2>
           <div class="flexWrap">
+              <div class="flexCenteredColumn">
+                <a href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank"><img src="sassLogo.png" alt="" id="sassLogo" class="noCursor"></a>
+                <h4 id="sassLogoText" class="blackFont">Sass & SCSS</h4>
+              </div>
+              <div class="flexCenteredColumn">
+                  <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src="reactLogo.png" alt="" id="reactLogo" class="noCursor"></a>
+                  <h4 id="reactLogoText" class="blackFont">React</h4>
+                </div>
               <div class="flexCenteredColumn">
                 <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src="javaLogo.png" alt="" id="javaLogo" class="noCursor"></a>
                 <h4 id="javaLogoText" class="blackFont">Java</h4>
@@ -200,7 +244,6 @@
 
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>

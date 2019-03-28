@@ -1,12 +1,6 @@
 
 
 
-//   $('#top').hide();
-
-//   document.onload = setTimeout(() =>{
-//     $('#top').show();
-//   },500)
-
 document.onload = setTimeout(() =>{
   $('.introductionText').addClass('fadeOut');
 },3000)
@@ -20,6 +14,8 @@ document.onload = setTimeout(() =>{
   $('#titleDiv').addClass('fadeIn2');
   
 },4000)
+
+
 
 // document.onload = setTimeout(()=>{
 //   $('#titleDiv').html('<h2>Web Developer</h2><h2>Web Designer</h2>');
@@ -297,6 +293,30 @@ $('#javaLogo').hover(function(){
   // $('#javaLogo').attr('src', 'javaLogoBW.png');
   $('#javaLogoText').removeClass('whiteFont');
   $('#javaLogoText').addClass('blackFont');
+});
+
+
+// This makes the sass image to change from black and white to the colored version
+$('#sassLogo').hover(function(){
+  // $('#sassLogo').attr('src', 'sassLogo.png');
+  $('#sassLogoText').removeClass('blackFont');
+  $('#sassLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#sassLogo').attr('src', 'sassLogoBW.png');
+  $('#sassLogoText').removeClass('whiteFont');
+  $('#sassLogoText').addClass('blackFont');
+});
+
+
+// This makes the python image to change from black and white to the colored version
+$('#pythonLogo').hover(function(){
+  // $('#pythonLogo').attr('src', 'pythonLogo.png');
+  $('#pythonLogoText').removeClass('blackFont');
+  $('#pythonLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#pythonLogo').attr('src', 'pythonLogoBW.png');
+  $('#pythonLogoText').removeClass('whiteFont');
+  $('#pythonLogoText').addClass('blackFont');
 });
 
 
