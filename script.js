@@ -1,6 +1,5 @@
 
 
-
 document.onload = setTimeout(() =>{
   $('.introductionText').addClass('fadeOut');
 },3000)
@@ -10,12 +9,42 @@ document.onload = setTimeout(() =>{
   $('.introductionText').html('Jaime Jacobo');
   $('.introductionText').addClass('biggerFont');
   $('.introductionText').addClass('fadeIn');
-  // $('#titleDiv').html('<h2>Web Developer</h2><h2>Web Designer</h2>');
   $('#titleDiv').addClass('fadeIn2');
 },4000)
 
 
-  $('.typewrite').removeClass('hide');
+// INSTRUCTIONS RELATED TO THE LANGUAGE OF THE PAGE
+
+// This is to hide the spanish text fro the main page
+$('.spanish').hide();
+
+// This is to hide the second list of the language picker, the one that the spanish lenguage goes on top
+$('#languagePickerList__spanish').hide();
+
+//This instruction tells the webpage to, everytime the user clicks on the 'Spanish' button, the page will be shown in Spanish and the language picker list will show the spanish language on top
+$('#spanishPage__english').click(()=>{
+  $('.english').hide();
+  $('.spanish').show();
+  $('#languagePickerList__spanish').show();
+  $('#languagePickerList__english').hide();
+  $('#englishPage__spanish').html('<img src="usFlag.png"/>Inglés');
+  $('#spanishPage__spanish').html('<img src="spainFlag.png"/>Español');
+})
+
+//This instruction tells the webpage to, everytime the user clicks on the 'English' button, the page will be shown in English and the language picker list will show the english language on top
+$('#englishPage__spanish').click(()=>{
+  $('.spanish').hide();
+  $('.english').show();
+  $('#languagePickerList__english').show();
+  $('#languagePickerList__spanish').hide();
+  $('#englishPage__english').html('<img src="usFlag.png"/>English');
+  $('#spanishPage__english').html('<img src="spainFlag.png"/>Spanish');
+})
+
+
+
+  
+  // $('#languagePickerList__english').hide();
 
 
 
@@ -321,101 +350,79 @@ $('#pythonLogo').hover(function(){
   $('#pythonLogoText').addClass('blackFont');
 });
 
+// This makes the react image to change from black and white to the colored version
+$('#handlebarsLogo').hover(function(){
+  // $('#handlebarsLogo').attr('src', 'handlebarsLogo.png');
+  $('#handlebarsLogoText').removeClass('blackFont');
+  $('#handlebarsLogoText').addClass('whiteFont');
+  }, function(){
+  // $('#handlebarsLogo').attr('src', 'handlebarsLogoBW.png');
+  $('#handlebarsLogoText').removeClass('whiteFont');
+  $('#handlebarsLogoText').addClass('blackFont');
+});
 
 
 
-// Functions to change the language of the page
 
-$('.spanish').hide();
 
-$('#spanishPage').click(()=>{
-  $('.english').hide();
-  $('.spanish').show();
-})
-
-$('#englishPage').click(()=>{
-  $('.spanish').hide();
-  $('.english').show();
-})
 
 
 
   // PRUEBAS AUTO WRITTER
 
-var TxtType = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+  let TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
 
-TxtType.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+  TxtType.prototype.tick = function() {
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
 
-  if (this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
+    if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-  var that = this;
-  var delta = 200 - Math.random() * 100;
+    let that = this;
+    let delta = 200 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
+    if (this.isDeleting) { delta /= 2; }
 
-  if (!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
-  }
+    if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+    }
 
-  setTimeout(function() {
-  that.tick();
-  }, delta);
-};
+    setTimeout(function() {
+    that.tick();
+    }, delta);
+  };
 
-window.onload = setTimeout(() => {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
+  window.onload = setTimeout(() => {
+    let elements = document.getElementsByClassName('typewrite');
+    for (let i=0; i<elements.length; i++) {
+      let toRotate = elements[i].getAttribute('data-type');
+      let period = elements[i].getAttribute('data-period');
       if (toRotate) {
         new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-},4000);
-
-
-
-
-
-// window.onload = function() {
-//   var elements = document.getElementsByClassName('typewrite');
-//   for (var i=0; i<elements.length; i++) {
-//       var toRotate = elements[i].getAttribute('data-type');
-//       var period = elements[i].getAttribute('data-period');
-//       if (toRotate) {
-//         new TxtType(elements[i], JSON.parse(toRotate), period);
-//       }
-//   }
-//   // INJECT CSS
-//   var css = document.createElement("style");
-//   css.type = "text/css";
-//   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-//   document.body.appendChild(css);
-// };
-  
+      };
+    };
+    // This avoids the 'Jaime Jacobo' title to go down every time the typewritter types something.
+    let css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  },4000);

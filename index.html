@@ -15,15 +15,23 @@
 
 
   <div id="top" class="containerNav slideDown">
-    <ul id="languagePickerList" class="languagePicker">
-      <li id="englishPage"><img id="englishImage" src="usFlag.png"/>English</li>
-      <li id="spanishPage"><img id="spanishImage" src="spainFlag.png"/>Spanish</li>
+    <ul id="languagePickerList__english" class="languagePicker">
+      <li id="englishPage__english"><img src="usFlag.png"/>English</li>
+      <li id="spanishPage__english"><img src="spainFlag.png"/>Spanish</li>
+    </ul>
+    <ul id="languagePickerList__spanish" class="languagePicker">
+      <li id="spanishPage__spanish"><img id="spanishImage__spanish" src="spainFlag.png"/>Spanish</li>
+      <li id="englishPage__spanish"><img id="englishImage__spanish" src="usFlag.png"/>English</li>
     </ul>
     <ul id="navbarList">
-      <li id="navbarContact"><a href="#media" class="scroll down">Media</a></li>
-      <li id="navbarSkills"><a href="#technicalSkills" class="scroll down">Skills</a></li>
-      <li id="navbarSocialMedia"><a href="#myProjects" class="scroll down">Projects</a></li>
-      <li id="navbarMyProjects"><a href="#aboutMe" class="scroll down">About Me</a></li>
+      <li id="navbarContact" class="english"><a href="#media">Media</a></li>
+      <li id="navbarContact" class="spanish"><a href="#media">Media</a></li>
+      <li id="navbarSkills" class="english"><a href="#technicalSkills">Skills</a></li>
+      <li id="navbarSkills" class="spanish"><a href="#technicalSkills">Tecnologías</a></li>
+      <li id="navbarSocialMedia" class="english"><a href="#myProjects">Projects</a></li>
+      <li id="navbarSocialMedia" class="spanish"><a href="#myProjects">Proyectos</a></li>
+      <li id="navbarMyProjects" class="english"><a href="#aboutMe">About Me</a></li>
+      <li id="navbarMyProjects" class="spanish"><a href="#aboutMe">Sobre Mí</a></li>
     </ul>
   </div>
   
@@ -31,7 +39,7 @@
     <h1 class="introductionText mainTitle fadeIn">Welcome to my Website</h1>
     <div id="titleDiv">
       <p>
-        <a href="" class="typewrite hide" data-period="2000" data-type='[ "Frontend Developer", "Javascript Developer", "Web Designer", "Python Developer", "Web Developer" ]'></a>
+        <p href="" class="typewrite" data-period="2000" data-type='[ "Frontend Developer", "JavaScript Developer", "Web Designer", "Python Developer", "Web Developer" ]'></p>
       </p>
     </div>
   </div>
@@ -52,7 +60,7 @@
             I am a fast learner who sees an opportunity to learn and acquire knowledge in every problem or conflict I encounter. 
           </p>
         </div>
-        <div id="contentOfWhatDoILikeToDo" class="marginLeft">
+        <div class="contentOfWhatDoILikeToDo marginLeft">
           <h2>What do I like to do?</h2>
           <p>
             Programming aside, my two big passions are sports and music. I have been playing all kinds of sports since I was a little kid. If I had to choose two sports, they would be skateboarding and football.
@@ -62,13 +70,20 @@
           </p>
         </div>
         <div id="contentWhereDoILearnFrom" class="marginLeft">
-          <h2>Where do I come from?</h2>
+          <h2>Where do I learn from?</h2>
           <p>
-            I was born in Mexico, but I have lived in Spain for the last 12 years. After studying for a Bachelor’s degree in Psychology back in Madrid, I decided to make a change in my life and move to Miami to begin a whole new adventure.
+            Almost all of my programming knowledge comes from my day to day work and from the Bootcamp I completed in Miami. Nevertheless, this are my favorite sources from the ones I have been learning the most:
           </p>
-          <p>
-            When I think of my future, I see myself living in a place where I can keep growing as a developer, as a designer and as a person.
-          </p>
+          <div class="youtubeChannelsDiv">
+            <div class="youtubeChannelsContent">
+              <img src="theCodingTrain.jpg" alt="The Coding Train - image">
+              <p>The Coding Train</p>
+            </div>
+            <div class="youtubeChannelsContent">
+              <img src="platzi.jpg" alt="The Coding Train - image">
+              <p>Platzi</p>
+            </div>
+          </div>
         </div>
       </div>
       <div id="aboutMeInformation" class="spanish">
@@ -87,7 +102,7 @@
         <div id="contentOfWhatDoILikeToDo" class="marginLeft">
           <h2>¿Qué me guta hacer?</h2>
           <p>
-            Mis dos lenguajes de programación favoritos son Python y JavaScript. Disfruto mucho aprendiendo de estas tecnologías, e invierto la gran parte de mi tiempo en aprender nuevos conceptos teóricos y prácticos de estos lenguajes. No obstante, me llaman mucho la atención otra serie de lenguajes como Java, C++, etc., sobre los cuales voy indagando poco a poco.
+            Las dos tecnologías que más disfruto estudiando, y a las que dedico la mayor parte de mi tiempo, son JavaScript y Python. No obstante, me llaman mucho la atención otra serie de lenguajes como Java, C++, etc., sobre los cuales voy indagando poco a poco.
           </p>
           <p>
             Programación aparte, mis dos grandes pasiones son el deporte y la música. He practicado todo tipo de deportes desde niño. Si tuviese que elegir dos deportes, elegiría el fútbol americano y el skateboarding. 
@@ -97,7 +112,7 @@
           </p>
         </div>
         <div id="contentWhereDoILearnFrom" class="marginLeft">
-          <h2>Where do I come from?</h2>
+          <h2>¿De dónde aprendo?</h2>
           <p>
             I was born in Mexico, but I have lived in Spain for the last 12 years. After studying for a Bachelor’s degree in Psychology back in Madrid, I decided to make a change in my life and move to Miami to begin a whole new adventure.
           </p>
@@ -177,10 +192,6 @@
                   <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank"><img src="reactLogo.png" alt="" id="reactLogo" class="noCursor"></a>
                   <h4 id="reactLogoText" class="blackFont">React</h4>
                 </div>
-              <div class="flexCenteredColumn">
-                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src="javaLogo.png" alt="" id="javaLogo" class="noCursor"></a>
-                <h4 id="javaLogoText" class="blackFont">Java</h4>
-              </div>
             <div class="flexCenteredColumn">
               <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank"><img src="bootstrapLogo.png" alt="" id="bootstrapLogo" class="noCursor"></a>
               <h4 id="bootstrapLogoText" class="blackFont">Bootstrap</h4>
@@ -194,8 +205,16 @@
               <h4 id="gitLogoText" class="blackFont">Git</h4>
             </div>
             <div class="flexCenteredColumn">
+              <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src="handlebars.png" alt="" id="handlebarsLogo" class="noCursor"></a>
+              <h4 id="handlebarsLogoText" class="blackFont">Handlebars.js</h4>
+            </div>
+            <div class="flexCenteredColumn">
               <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank"><img src="ajaxLogo.png" alt="" id="ajaxLogo" class="noCursor"></a>
               <h4 id="ajaxLogoText" class="blackFont">AJAX</h4>
+            </div>
+            <div class="flexCenteredColumn">
+              <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"><img src="javaLogo.png" alt="" id="javaLogo" class="noCursor"></a>
+              <h4 id="javaLogoText" class="blackFont">Java</h4>
             </div>
             <div class="flexCenteredColumn">
               <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank"><img src="nodejsLogo.png" alt="" id="nodejsLogo" class="noCursor"></a>
