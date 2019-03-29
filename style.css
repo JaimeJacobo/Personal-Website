@@ -18,9 +18,28 @@ h1 {
   margin: 0;
 }
 
+.contentOfWhatDoILikeToDo__title{
+  margin-top: 1.8em;
+}
+
+.contentWhereDoILearnFrom__title{
+  margin-top: 1.8em;
+}
+
 .youtubeChannelsDiv{
   display: flex;
-  text-align: center;
+  flex-direction: column;
+}
+
+.youtubeChannelsSecondDiv{
+  display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.youtubeChannels-title p{
+  margin-bottom: 0;
+  text-decoration: underline;
 }
 
 .youtubeChannelsContent {
@@ -30,10 +49,20 @@ h1 {
   flex-direction: column;
 }
 
+.youtubeChannelsContent:hover {
+  cursor: pointer;
+}
+
 .youtubeChannelsContent img{
   width: 7em;
   border-radius: 58px;
   margin-bottom: 13px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.youtubeChannelsContent p{
+  margin-bottom: 1em; 
 }
 
 .hide{
@@ -63,10 +92,6 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   line-height: 1.8em;
-}
-
-#aboutMeInformation div{
-  margin-bottom: 4em;
 }
 
 #aboutMePicture {
@@ -441,14 +466,13 @@ h1 {
   #aboutMeInformation div{
     max-width: 44em;
     margin: 0 auto;
-    margin-bottom: 4em;
   }
 
   #contentOfWhoAmI {
     margin: 0 300px;
   }
 
-  contentOfWhatDoILikeToDo {
+  #contentOfWhatDoILikeToDo {
     margin: 0 300px;
   }
 
@@ -489,21 +513,4 @@ h1 {
     transform: scale(1);
   }
 }
-
-
-/* CAROUSEL CSS */
-
-
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 66%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
-
-
-
 
