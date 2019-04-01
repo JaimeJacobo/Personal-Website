@@ -426,3 +426,19 @@ $('#handlebarsLogo').hover(function(){
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
   },4000);
+
+
+
+  // THIS INSTRUCTIONS ARE FOR PLAYING THE VIDEOS OF THE PROJECTS
+
+    $('.videoProject').on('mouseenter', function(){
+    $('.videoProject').get(0).play()
+  })
+
+  $('.videoProject').on('mouseout', function(){
+    $('.videoProject').get(0).pause();
+  })
+
+  $('.videoProject').click(()=>{
+    $('.videoProject').get(0).pause();
+  })

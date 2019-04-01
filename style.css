@@ -18,6 +18,36 @@ h1 {
   margin: 0;
 }
 
+@media screen and (min-width: 750px){
+  #aboutMeInformation p{
+    font-size: 20px;
+  }
+
+  #aboutMeInformation div{
+    max-width: 44em;
+    margin: 0 auto;
+  }
+
+  #contentOfWhoAmI {
+    margin: 0 300px;
+  }
+
+  #contentOfWhatDoILikeToDo {
+    margin: 0 300px;
+  }
+
+  #contentWhereDoILearnFrom {
+    margin: 0 300px;
+  }
+}
+
+.blockTechnologies{
+  display: block;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
 .contentOfWhatDoILikeToDo__title{
   margin-top: 1.8em;
 }
@@ -37,9 +67,10 @@ h1 {
     width: 100%;
 }
 
-.youtubeChannels-title p{
+.contentOfLearnedMedia p{
   margin-bottom: 0;
   text-decoration: underline;
+  font-size: 23px;
 }
 
 .youtubeChannelsContent {
@@ -62,7 +93,8 @@ h1 {
 }
 
 .youtubeChannelsContent p{
-  margin-bottom: 1em; 
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 .hide{
@@ -150,7 +182,7 @@ h1 {
 }
 
 #titleDiv .wrap{
-  font-size: 3.2vw;
+  font-size: 1.7em;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -233,7 +265,20 @@ h1 {
   transition: all .2s ease-in-out;
 }
 
+#projectPictures video {
+  width: 450px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 0px white solid;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
 #projectPictures img:hover {
+  transform: scale(1.02);
+}
+
+#projectPictures video:hover {
   transform: scale(1.02);
 }
 
@@ -246,6 +291,10 @@ h1 {
 
 .projectsInfo {
   width: 450px;
+}
+
+.projectsInfo h2{
+  margin-bottom: 0;
 }
 
 #technologiesImages img{
@@ -466,31 +515,20 @@ h1 {
 
 }
 
-@media screen and (min-width: 750px){
-  #aboutMeInformation p{
-    font-size: 20px;
-  }
-
-  #aboutMeInformation div{
-    max-width: 44em;
-    margin: 0 auto;
-  }
-
-  #contentOfWhoAmI {
-    margin: 0 300px;
-  }
-
-  #contentOfWhatDoILikeToDo {
-    margin: 0 300px;
-  }
-
-  #contentWhereDoILearnFrom {
-    margin: 0 300px;
-  }
-}
-
 @media screen and (max-width: 660px){
+  .youtubeChannelsContent img {
+    width: 5em;
+  }
+
+  #myMediaDiv{
+    width: 95%;
+  }
+  
   #projectPictures img {
+    width: 300px;
+  }
+
+  #projectPictures video {
     width: 300px;
   }
 
